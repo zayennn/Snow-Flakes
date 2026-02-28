@@ -1,11 +1,4 @@
-/**
-  * "Full Page View" highly recommended
-  * 
-  * Scroll to zoom out 
-  * and see the full globe, or   
-  * hit regenerate for a 
-  * new aurora and snow sphere pattern!
-  */
+
 const sketch = (p) => {
   p.snowSphere = null;
 
