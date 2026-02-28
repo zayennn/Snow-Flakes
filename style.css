@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;800;900&family=Teko:wght@700&display=swap");
+
+:root {
+  --cyan: #0cdbf5;
+  --pink: #ff0cb8;
+  --white: #fff;
+  --black: #000;
+}
+
+body {
+  overflow: hidden;
+  font-family: Orbitron, sans-serif;
+}
+
+#defaultCanvas0 {
+    position: relative;
+    z-index: 1;
+    background: var(--gradient-bg);
+    background-blend-mode: var(--gradient-blend-mode);
+}
+
+.instagram-cta {
+  --shadow-colour: var(--cyan);
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1000;
+  border-radius: 8px;
+}
+
+.instagram-cta__link,
+.button{
+	all: unset;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+	background: var(--black);
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  transition: all 0.5s;
+  color: var(--white);
+  font-family: "Orbitron", monospace;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 0 24px var(--shadow-colour), 0 0 12px var(--shadow-colour),
+    0 0 6px var(--shadow-colour), 0 0 3px var(--shadow-colour);
+	cursor: pointer;
+}
+
+.instagram-cta__link:hover, 
+.button:hover {
+  --shadow-colour: var(--pink);
+}
+
+.instagram-cta__icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 8px;
+  fill: currentColor;
+  transition: all 0.5s;
+}
+
+.instagram-cta__text {
+  font-size: 18px;
+  font-family: "Orbitron", monospace;
+  font-weight: 800;
+  -webkit-text-stroke: 1px var(--black);
+}
+
+@meda screen and (min-width: 768px) {
+  .instagram-cta__action {
+    display: inline;
+  }
+}
