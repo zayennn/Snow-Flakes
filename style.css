@@ -13,10 +13,10 @@ body {
 }
 
 #defaultCanvas0 {
-    position: relative;
-    z-index: 1;
-    background: var(--gradient-bg);
-    background-blend-mode: var(--gradient-blend-mode);
+  position: relative;
+  z-index: 1;
+  background: var(--gradient-bg);
+  background-blend-mode: var(--gradient-blend-mode);
 }
 
 .instagram-cta {
@@ -29,13 +29,13 @@ body {
 }
 
 .instagram-cta__link,
-.button{
-	all: unset;
+.button {
+  all: unset;
   display: flex;
   align-items: center;
   gap: 8px;
   padding: 8px 12px;
-	background: var(--black);
+  background: var(--black);
   border-radius: 8px;
   backdrop-filter: blur(10px);
   transition: all 0.5s;
@@ -45,10 +45,10 @@ body {
   text-decoration: none;
   box-shadow: 0 0 24px var(--shadow-colour), 0 0 12px var(--shadow-colour),
     0 0 6px var(--shadow-colour), 0 0 3px var(--shadow-colour);
-	cursor: pointer;
+  cursor: pointer;
 }
 
-.instagram-cta__link:hover, 
+.instagram-cta__link:hover,
 .button:hover {
   --shadow-colour: var(--pink);
 }
