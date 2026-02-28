@@ -1,4 +1,3 @@
-
 const sketch = (p) => {
   p.snowSphere = null;
 
